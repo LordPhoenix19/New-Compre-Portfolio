@@ -252,33 +252,34 @@ section h2::after {
 }
 
 .contact-info {
-    flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
+    padding: 20px;
 }
 
-.contact-item {
-    display: flex;
-    align-items: center;
+.contact-link {
+    display: inline-block;
     background: rgba(51, 51, 51, 0.8);
-    padding: 20px;
-    border-radius: 15px;
+    padding: 15px;
+    border-radius: 50%;
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     border: 2px solid transparent;
     backdrop-filter: blur(10px);
 }
 
-.contact-item:hover {
-    transform: translateY(-5px);
+.contact-link:hover {
+    transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0,0,0,0.5), 0 0 20px rgba(255,255,255,0.2);
     border-color: #fff;
 }
 
 .contact-icon {
-    font-size: 2rem;
-    margin-right: 15px;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
 }
 
 .contact-form {
